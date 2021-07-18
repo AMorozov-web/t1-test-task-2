@@ -6,6 +6,7 @@ const LogoImage = styled.img`
   width: 38px;
   height: 38px;
   margin-left: -4px;
+  margin-right: 25px;
 `;
 
 const T1Logo = () => {
