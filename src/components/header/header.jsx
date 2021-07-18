@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   min-height: 64px;
+  background-color: #ffffff;
 `;
 
 const HeaderContainer = styled.div`

@@ -64,7 +64,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: Roboto, Arial ,sans-serif;
-    color: #363636;
     background-color: #f3f3f3;
   }
 `;
