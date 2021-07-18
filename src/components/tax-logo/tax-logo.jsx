@@ -18,7 +18,7 @@ const LogoImage = styled.img`
 
 const LogoText = styled.p`
   display: flex;
-  width: 110px;
+  width: 105px;
   min-height: 40px;
   align-items: center;
   margin: 0;
