@@ -56,22 +56,16 @@ const Support = styled(Button)`
   background-image: url('img/support.svg');
 `;
 
-const UserButtonsList = () => {
+const Logout = styled(Button)`
+  background-image: url('img/logout.svg');
+`;
 
   return (
     <List>
-      <li>
-        <Notifications aria-label='Посмотреть уведомления'/>
-      </li>
-      <li>
-        <Favorites aria-label='Избранное'/>
-      </li>
-      <li>
-        <Options aria-label='Опции'/>
-      </li>
-      <li>
-        <Support aria-label='Техподдержка'/>
-      </li>
+      <Item>
+      <Item>
+        <Logout type="button" aria-label='Выйти'/>
+      </Item>
     </List>
   );
 };
