@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const InputContainer = styled.div`
   position: relative;
-  width: 376px;
+  display: flex;
+  flex-grow: 1;
   height: 40px;
   margin-right: 35px;
   background-color: #ffffff;
@@ -23,7 +24,8 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-  display: block;
+  display: flex;
+  flex-grow: 1;
   width: 100%;
   height: 100%;
   padding-left: 21px;
