@@ -1,20 +1,30 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const unreadNotifyCount = 3;
 
 const List = styled.ul`
   display: flex;
+  align-items: center;
+  min-height: 40px;
   margin: 0;
+  margin-left: auto;
   padding: 0;
   list-style: none;
+`;
+
+const Item = styled.li`
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
 `;
 
 const Button = styled.button`
   position: relative;
   width: 40px;
   height: 40px;
-  padding: none;
+  padding: 0;
   background-color: #ffffff;
   background-position: center center;
   background-size: 18px 18px;
@@ -60,14 +70,32 @@ const Logout = styled(Button)`
   background-image: url('img/logout.svg');
 `;
 
+const UserButtonsList = ({children}) => {
+
   return (
     <List>
       <Item>
+        <Notifications type="button" aria-label='Посмотреть уведомления'/>
+      </Item>
+      <Item>
+        <Favorites type="button" aria-label='Избранное'/>
+      </Item>
+      <Item>
+        <Options type="button" aria-label='Опции'/>
+      </Item>
+      <Item>
+        <Support type="button" aria-label='Техподдержка'/>
+      </Item>
+      {children ? React.Children.map(children, (el) => <Item key={el}>{el}</Item>) : ``}
       <Item>
         <Logout type="button" aria-label='Выйти'/>
       </Item>
     </List>
   );
+};
+
+UserButtonsList.propTypes = {
+  children: PropTypes.node,
 };
 
 export {UserButtonsList};
