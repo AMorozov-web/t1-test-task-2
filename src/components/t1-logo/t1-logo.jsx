@@ -20,7 +20,7 @@ const T1Logo = () => {
 
   return (
     <LogoLink href="https://t1-consulting.ru/" target="_blank" aria-label="Перейти на сайт компании Т1 Консалтинг">
-      <LogoImage src="img/t1-logo.png" width="40" height="40" aria-label="Логотип Т1 Консалтинг" />
+      <LogoImage src="img/t1-logo.png" width="40" height="40" alt="Логотип Т1 Консалтинг" />
     </LogoLink>
   );
 };

@@ -33,6 +33,7 @@ const TaxLogo = () => {
 
   return (
     <LogoLink href="https://www.nalog.gov.ru/" target="_blank" aria-label="Перейти на сайт Федеральной Налоговой службы">
+      <LogoImage src='img/tax-logo.svg' width='40' height='40' alt='Логотип Федеральной Налоговой службы' />
       <LogoText>
         Федеральная Налоговая служба
       </LogoText>
