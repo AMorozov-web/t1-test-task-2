@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const LogoContainer = styled.div`
+const LogoLink = styled.a`
   display: flex;
   width: 152px;
   height: 40px;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 `;
 
 const LogoImage = styled.img`
@@ -31,12 +32,11 @@ const LogoText = styled.p`
 const TaxLogo = () => {
 
   return (
-    <LogoContainer>
-      <LogoImage src='img/tax-logo.svg' width='40' height='40' aria-label='Логотип Федеральной Налоговой службы' />
+    <LogoLink href="https://www.nalog.gov.ru/" target="_blank" aria-label="Перейти на сайт Федеральной Налоговой службы">
       <LogoText>
         Федеральная Налоговая служба
       </LogoText>
-    </LogoContainer>
+    </LogoLink>
   );
 };
 
