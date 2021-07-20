@@ -15,7 +15,7 @@ module.exports = {
   optimization: {
     minimize: true,
     minimizer: [
-      new TerserPlugin({ parallel: true }),
+      new TerserPlugin(),
       new HtmlMinimizerPlugin(),
     ]
   },
