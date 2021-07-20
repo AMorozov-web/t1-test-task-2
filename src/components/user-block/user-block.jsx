@@ -70,7 +70,7 @@ const Logout = styled(Button)`
   background-image: url('img/logout.svg');
 `;
 
-const UserButtonsList = ({children}) => {
+const UserBlock = ({children}) => {
 
   return (
     <List>
@@ -94,8 +94,8 @@ const UserButtonsList = ({children}) => {
   );
 };
 
-UserButtonsList.propTypes = {
+UserBlock.propTypes = {
   children: PropTypes.node,
 };
 
-export {UserButtonsList};
+export {UserBlock};
