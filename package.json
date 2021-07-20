@@ -7,8 +7,8 @@
     "eslint": "eslint --ext .jsx --ext .js src/",
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "test": "npm run eslint && npm run stylelint",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development"
+    "build": "set NODE_ENV=production && webpack --mode production",
+    "start": "set NODE_ENV=development && webpack serve --mode development"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
