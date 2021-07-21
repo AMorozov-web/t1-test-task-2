@@ -37,7 +37,7 @@ const Input = styled.input`
   border-radius: 4px;
 `;
 
-const MainSearch = () => {
+const Search = () => {
 
   return (
     <InputContainer>
@@ -47,4 +47,4 @@ const MainSearch = () => {
   );
 };
 
-export {MainSearch};
+export {Search};

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Header} from '../header/header';
-import {MainSearch} from '../main-search/main-search';
+import {Search} from '../search/search';
 import {Main} from '../main/main';
 import {T1Logo} from '../t1-logo/t1-logo';
 import {TaxLogo} from '../tax-logo/tax-logo';
@@ -14,7 +14,7 @@ const App = () => {
       <Header>
         <TaxLogo />
         <T1Logo />
-        <MainSearch />
+        <Search />
         <UserBlock>
           <UserInfo />
         </UserBlock>
