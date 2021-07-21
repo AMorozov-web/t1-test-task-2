@@ -12,6 +12,8 @@ const MainContainer = styled.div`
                         "nav table table";
   width: 990px;
   margin: 0 auto;
+  padding-left: 13px;
+  padding-right: 25px;
 `;
 
 const Main = ({children}) => {
