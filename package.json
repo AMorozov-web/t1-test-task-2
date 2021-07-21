@@ -1,7 +1,8 @@
 {
-  "name": "boiler_plate",
+  "name": "test_name",
   "version": "1.0.0",
-  "description": "My new project",
+  "description": "test_decription",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "eslint": "eslint --ext .jsx --ext .js src/",
