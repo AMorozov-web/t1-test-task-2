@@ -6,6 +6,7 @@ import {T1Logo} from '../t1-logo/t1-logo';
 import {TaxLogo} from '../tax-logo/tax-logo';
 import {UserBlock} from '../user-block/user-block';
 import {UserInfo} from '../user-info/user-info';
+import {Nav} from '../nav/nav';
 
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
         </UserBlock>
       </Header>
       <Main>
-        Main
+        <Nav />
       </Main>
     </>
   );
