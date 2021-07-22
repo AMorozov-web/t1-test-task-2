@@ -1,14 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const baseStyles = `
+const commonStyles = `
   display: block;
   width: 188px;
   min-height: 31px;
-  padding-left: 13px;
-  padding-right: 13px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 38px;
+  padding-right: 27px;
+  color: #5a5a5a;
+  font-size: 9px;
+  font-weight: 500;
+
+  &:hover,
+  &:focus {
+    color: #274252;
+    background-color: #ffffff;
+  }
 `;
 
 const StyledNav = styled.nav`
@@ -19,21 +26,34 @@ const StyledNav = styled.nav`
 `;
 
 const Link = styled.a`
-  ${baseStyles}
+  ${commonStyles}
 
   text-decoration: none;
 `;
 
+const LinkBack = styled(Link)`
+  color: #a6a6a6;
+
+  &:hover,
+  &:focus {
+    color: #274252;
+    background-color: transparent;
+  }
+`;
+
 const Details = styled.details`
-  ${baseStyles}
+  ${commonStyles}
 `;
 
 const Nav = () => {
 
   return (
     <StyledNav>
-      <Link href="">
-        nav
+      <LinkBack href="" aria-label="Вернуться назад">
+        Меню
+      </LinkBack>
+      <Link href="" aria-label="Вернуться назад">
+        Главная
       </Link>
     </StyledNav>
   );
