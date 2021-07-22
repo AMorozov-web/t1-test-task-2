@@ -52,7 +52,7 @@ const Nav = () => {
       <LinkBack href="" aria-label="Вернуться назад">
         Меню
       </LinkBack>
-      <Link href="" aria-label="Вернуться назад">
+      <Link href="" aria-label="Главная">
         Главная
       </Link>
     </StyledNav>
