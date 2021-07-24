@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Container = styled.section`
   grid-area: declaration;
   min-height: 395px;
-  box-shadow: 0px 5px 18px -1px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 5px 18px -1px rgba(0, 0, 0, 0.21);
 `;
 
 const ButtonsContainer = styled.div`
@@ -96,7 +96,7 @@ const Declaration = () => {
   return (
     <Container >
       <ButtonsContainer>
-        <input className="visually-hidden" id="refresh" type="radio" name="tabs" checked />
+        <input className="visually-hidden" id="refresh" type="radio" name="tabs" defaultChecked />
         <Refresh htmlFor="refresh">
           Обновление деклараций
         </Refresh>

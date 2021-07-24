@@ -8,7 +8,7 @@ const MainContainer = styled.div`
   grid-template-rows: repeat(4, min-content);
   grid-template-areas:  "nav title downloadButton"
                         "nav declaration sum"
-                        "nav type type"
+                        "nav select select"
                         "nav table table";
   column-gap: 25px;
   row-gap: 16px;

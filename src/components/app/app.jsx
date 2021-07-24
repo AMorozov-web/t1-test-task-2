@@ -10,6 +10,7 @@ import {Nav} from '../nav/nav';
 import {Title} from '../title/title';
 import {Declaration} from '../declaration/declaration';
 import {DownloadButton} from '../download-button/download-button';
+import {ViewChange} from '../view-change/view-change';
 
 const App = () => {
 
@@ -28,6 +29,7 @@ const App = () => {
         <Title />
         <DownloadButton />
         <Declaration />
+        <ViewChange />
       </Main>
     </>
   );
