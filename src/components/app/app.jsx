@@ -7,6 +7,7 @@ import {TaxLogo} from '../tax-logo/tax-logo';
 import {UserBlock} from '../user-block/user-block';
 import {UserInfo} from '../user-info/user-info';
 import {Nav} from '../nav/nav';
+import {Title} from '../title/title';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
       </Header>
       <Main>
         <Nav />
+        <Title />
       </Main>
     </>
   );
