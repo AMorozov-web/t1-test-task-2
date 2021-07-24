@@ -9,6 +9,7 @@ import {UserInfo} from '../user-info/user-info';
 import {Nav} from '../nav/nav';
 import {Title} from '../title/title';
 import {Declaration} from '../declaration/declaration';
+import {DownloadButton} from '../download-button/download-button';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
       <Main>
         <Nav />
         <Title />
+        <DownloadButton />
         <Declaration />
       </Main>
     </>

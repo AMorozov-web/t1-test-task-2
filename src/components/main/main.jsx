@@ -11,6 +11,7 @@ const MainContainer = styled.div`
                         "nav type type"
                         "nav table table";
   column-gap: 25px;
+  row-gap: 16px;
   width: 1027px;
   margin: 0 auto;
   padding-left: 13px;

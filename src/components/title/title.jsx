@@ -6,8 +6,8 @@ const StyledTitle = styled.h1`
   display: block;
   width: auto;
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding-top: 18px;
+  padding-bottom: 8px;
   color: #676767;
   font-size: 19px;
   font-weight: 500;
