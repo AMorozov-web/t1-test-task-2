@@ -8,6 +8,7 @@ import {UserBlock} from '../user-block/user-block';
 import {UserInfo} from '../user-info/user-info';
 import {Nav} from '../nav/nav';
 import {Title} from '../title/title';
+import {Declaration} from '../declaration/declaration';
 
 const App = () => {
 
@@ -24,6 +25,7 @@ const App = () => {
       <Main>
         <Nav />
         <Title />
+        <Declaration />
       </Main>
     </>
   );
