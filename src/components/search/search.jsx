@@ -6,7 +6,7 @@ const InputContainer = styled.div`
   display: flex;
   flex-grow: 1;
   height: 40px;
-  margin-right: 35px;
+  margin-right: 14px;
   background-color: #ffffff;
 
   &::after {

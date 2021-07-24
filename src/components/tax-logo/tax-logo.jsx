@@ -3,10 +3,11 @@ import styled from 'styled-components';
 
 const LogoLink = styled.a`
   display: flex;
-  width: 147px;
-  height: 40px;
   justify-content: space-between;
   align-items: center;
+  width: 147px;
+  height: 40px;
+  margin-right: 4px;
   text-decoration: none;
 `;
 

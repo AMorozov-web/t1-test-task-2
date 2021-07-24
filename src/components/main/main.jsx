@@ -10,7 +10,7 @@ const MainContainer = styled.div`
                         "nav declaration sum"
                         "nav type type"
                         "nav table table";
-  width: 990px;
+  width: 1027px;
   margin: 0 auto;
   padding-left: 13px;
   padding-right: 25px;

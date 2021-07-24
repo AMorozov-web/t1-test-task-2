@@ -11,6 +11,7 @@ const List = styled.ul`
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-left: 13px;
   list-style: none;
 `;
 
