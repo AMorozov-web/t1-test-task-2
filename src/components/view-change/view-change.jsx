@@ -7,11 +7,12 @@ const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   flex-grow: 1;
+  padding-top: 21px;
 `;
 
 const StyledLabel = styled.label`
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 10px;
   font-weight: 500;
   color: #5a5a5a;
@@ -23,11 +24,11 @@ const StyledSelect = styled.select`
   align-items: center;
   width: 100%;
   height: 40px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 11px;
+  padding-right: 11px;
   padding-top: 12px;
   padding-bottom: 12px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   color: #5a5a5a;
   background-color: transparent;
@@ -50,7 +51,7 @@ const ViewChange = () => {
       <StyledLabel htmlFor="view-change">
         Вид
       </StyledLabel>
-      <StyledSelect id="view-change" type="select" defaultValue="1">
+      <StyledSelect id="view-change" defaultValue="1">
         <option value="1">1 квартал</option>
         <option value="2">2 квартал</option>
         <option value="3">3 квартал</option>

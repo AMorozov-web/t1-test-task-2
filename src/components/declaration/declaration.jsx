@@ -5,6 +5,7 @@ const Container = styled.section`
   grid-area: declaration;
   min-height: 395px;
   box-shadow: 0px 5px 18px -1px rgba(0, 0, 0, 0.21);
+  border-radius: 2px;
 `;
 
 const ButtonsContainer = styled.div`
