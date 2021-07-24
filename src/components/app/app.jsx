@@ -11,6 +11,7 @@ import {Title} from '../title/title';
 import {Declaration} from '../declaration/declaration';
 import {DownloadButton} from '../download-button/download-button';
 import {ViewChange} from '../view-change/view-change';
+import {TaxSum} from '../tax-sum/tax-sum';
 
 const App = () => {
 
@@ -29,6 +30,7 @@ const App = () => {
         <Title />
         <DownloadButton />
         <Declaration />
+        <TaxSum />
         <ViewChange />
       </Main>
     </>
