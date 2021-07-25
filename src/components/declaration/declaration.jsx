@@ -39,7 +39,7 @@ const Refresh = styled(Label)`
 const Timeline = styled(Label)`
   padding-left: 24px;
   color: #262626;
-  background-image: url('img/right-arrow.svg');
+  background-image: url('img/right-tick.svg');
   background-position: center left 7px;
   background-size: 20px 20px;
 `;
