@@ -12,6 +12,17 @@ import {Declaration} from '../declaration/declaration';
 import {DownloadButton} from '../download-button/download-button';
 import {ViewChange} from '../view-change/view-change';
 import {TaxSum} from '../tax-sum/tax-sum';
+import {Table} from '../table/table';
+
+const tableTitles = [
+  `Налог на прибыль`,
+  `Налог на добавленную стоймость(НДС)`,
+  `Налог на имущество`,
+  `НДФЛ`,
+  `Страховой налог`,
+  `Земельный налог`,
+  `Водный налог`,
+];
 
 const App = () => {
 
@@ -32,6 +43,7 @@ const App = () => {
         <Declaration />
         <TaxSum />
         <ViewChange />
+        <Table titles={tableTitles} />
       </Main>
     </>
   );
