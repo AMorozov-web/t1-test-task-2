@@ -109,6 +109,7 @@ const DropdownLink = styled.details`
     background-image: url('img/up-arrow.svg');
     background-position: center right 26px;
     background-color: #ffffff;
+    box-shadow: 0px 5px 18px -1px rgba(0, 0, 0, 0.21);
     line-height: 140%;
 
     & ${StyledText} {
