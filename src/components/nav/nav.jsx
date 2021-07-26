@@ -21,7 +21,7 @@ const Link = styled.a`
   display: flex;
   align-items: center;
   width: 188px;
-  min-height: 31px;
+  min-height: 23px;
   padding-left: 10px;
   padding-right: 27px;
   text-decoration: none;
@@ -60,7 +60,7 @@ const Summary = styled.summary`
   width: 188px;
   min-height: 31px;
   padding-left: 10px;
-  padding-right: 27px;
+  padding-right: 33px;
   background-repeat: no-repeat;
   background-position: center right 15px;
   background-size: 12px 12px;
@@ -130,7 +130,7 @@ const DropdownList = styled.ul`
   padding: 0;
   padding-left: 14px;
   padding-top: 17px;
-  padding-bottom: 11px;
+  padding-bottom: 6px;
   border-left: 3px solid #e5e5e5;
   list-style: none;
 `;
@@ -150,13 +150,14 @@ const DropdownItem = styled.li`
 const List = styled.ul`
   margin: 0;
   padding: 0;
+  padding-top: 4px;
   list-style: none;
 `;
 
 const Item = styled.li`
 
   &:not(:last-child) {
-    margin-bottom: 2px;
+    margin-bottom: 8px;
   }
 `;
 

@@ -16,6 +16,8 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
+  padding-top: 2px;
+  
   &:not(:last-child) {
     margin-right: 5px;
   }
