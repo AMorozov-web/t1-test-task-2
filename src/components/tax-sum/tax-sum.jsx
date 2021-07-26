@@ -56,6 +56,72 @@ const StyledSelect = styled.select`
   cursor: pointer;
 `;
 
+const Controlls = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 23px;
+`;
+
+const NavigateButton = styled.button`
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+`;
+
+const NavigateButtonLeft = styled(NavigateButton)`
+  & svg {
+    fill: #d2d2d2;
+  }
+`;
+
+const NavigateButtonRight = styled(NavigateButton)`
+  & svg {
+    fill: #00abe3;
+  }
+`;
+
+const Pagination = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: min-content;
+  min-height: 9px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;
+
+const PaginationItem = styled.li`
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #d2d2d2;
+  border-radius: 50%;
+  transform-origin: center;
+
+  &:not(:last-child) {
+    margin-right: 9px;
+  }
+
+  &:first-child {
+    background-color: #00abe3;
+  }
+
+  &:last-child {
+    transform: scale(0.7);
+  }
+`;
+
 const TaxSum = () => {
 
   return (
@@ -72,6 +138,20 @@ const TaxSum = () => {
         <option value="3">3 квартал 2021</option>
         <option value="4">4 квартал 2021</option>
       </StyledSelect>
+      <Controlls>
+        <NavigateButtonLeft type="button" aria-label="Предыдущий график">
+          <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M84 44H21.66L43.1 22.54a4 4 0 00-5.66-5.65L9.17 45.17a4 4 0 00-.5.61l-.17.32-.2.37c-.05.13-.08.27-.12.41-.03.12-.08.22-.1.34a3.95 3.95 0 000 1.57c.02.11.07.22.1.34.04.13.07.27.13.4.05.14.13.26.2.4l.16.29a4 4 0 00.5.61l28.29 28.28a4 4 0 005.65-5.66L21.66 52H84a4 4 0 000-8z"/></svg>
+        </NavigateButtonLeft>
+        <Pagination>
+          <PaginationItem></PaginationItem>
+          <PaginationItem></PaginationItem>
+          <PaginationItem></PaginationItem>
+          <PaginationItem></PaginationItem>
+        </Pagination>
+        <NavigateButtonRight type="button" aria-label="Следующий график">
+          <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M12 52h62.34L52.9 73.46a4 4 0 105.66 5.65l28.28-28.28c.18-.19.35-.4.5-.61l.17-.32.2-.37c.05-.13.08-.27.12-.41A4 4 0 0088 48c0-.27-.03-.53-.08-.78-.02-.12-.07-.23-.1-.35-.04-.13-.07-.27-.13-.4-.05-.14-.13-.26-.2-.4l-.16-.29a3.94 3.94 0 00-.5-.61L58.54 16.89a4 4 0 00-5.65 5.66L74.34 44H12a4 4 0 000 8z"/></svg>
+        </NavigateButtonRight>
+      </Controlls>
     </Container>
   );
 };
