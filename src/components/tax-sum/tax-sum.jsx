@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {PieChart, Pie, Cell} from "recharts";
+import {PieChart, Pie, Cell, Legend} from "recharts";
 import {chartData} from '../../const';
 
 const Container = styled.section`
@@ -125,6 +125,11 @@ const PaginationItem = styled.li`
   }
 `;
 
+const renderLegendText = (value) => {
+
+  return <span style={{color: `#424242`, fontSize: 11}}>{value}</span>;
+};
+
 const TaxSum = () => {
 
   return (
@@ -154,6 +159,15 @@ const TaxSum = () => {
             <Cell key={`${entry.name}`} fill={`${entry.color}`} />
           ))}
         </Pie>
+        <Legend
+          layout={`vertical`}
+          align={`right`}
+          verticalAlign={`bottom`}
+          iconType={`circle`}
+          iconSize={7}
+          formatter={renderLegendText}
+          wrapperStyle={{bottom: `19px`, right: `27px`}}
+        />
       </PieChart>
       <Controlls>
         <NavigateButtonLeft type="button" aria-label="Предыдущий график">
