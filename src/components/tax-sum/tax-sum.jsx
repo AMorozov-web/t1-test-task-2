@@ -7,7 +7,7 @@ const Container = styled.section`
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border: 1px solid #e6e6e6;
   border-radius: 2px;
 `;
@@ -61,10 +61,11 @@ const Controlls = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 23px;
+  min-height: 20px;
 `;
 
 const NavigateButton = styled.button`
+  align-self: flex-end;
   width: 20px;
   height: 20px;
   padding: 0;
@@ -93,7 +94,8 @@ const NavigateButtonRight = styled(NavigateButton)`
 const Pagination = styled.ul`
   display: flex;
   justify-content: space-between;
-  align-self: center;
+  align-items: center;
+  align-self: flex-start;
   width: min-content;
   min-height: 9px;
   margin: 0;
