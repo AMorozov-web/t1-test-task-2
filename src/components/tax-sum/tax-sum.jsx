@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import {PieChart, Pie, Cell} from "recharts";
+import {chartData} from '../../const';
 
 const Container = styled.section`
   grid-area: sum;
@@ -59,7 +61,6 @@ const StyledSelect = styled.select`
 const Controlls = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   min-height: 20px;
 `;
@@ -140,6 +141,20 @@ const TaxSum = () => {
         <option value="3">3 квартал 2021</option>
         <option value="4">4 квартал 2021</option>
       </StyledSelect>
+      <PieChart width={336} height={233}>
+        <Pie
+          data={chartData}
+          cx={72}
+          cy={134}
+          innerRadius={50}
+          outerRadius={70}
+          dataKey="value"
+        >
+          {chartData.map((entry) => (
+            <Cell key={`${entry.name}`} fill={`${entry.color}`} />
+          ))}
+        </Pie>
+      </PieChart>
       <Controlls>
         <NavigateButtonLeft type="button" aria-label="Предыдущий график">
           <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><path d="M84 44H21.66L43.1 22.54a4 4 0 00-5.66-5.65L9.17 45.17a4 4 0 00-.5.61l-.17.32-.2.37c-.05.13-.08.27-.12.41-.03.12-.08.22-.1.34a3.95 3.95 0 000 1.57c.02.11.07.22.1.34.04.13.07.27.13.4.05.14.13.26.2.4l.16.29a4 4 0 00.5.61l28.29 28.28a4 4 0 005.65-5.66L21.66 52H84a4 4 0 000-8z"/></svg>
