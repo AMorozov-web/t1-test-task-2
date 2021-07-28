@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {PieChart, Pie, Cell, Legend} from "recharts";
+import {PieChart, Pie, Cell, Legend} from 'recharts';
 import {chartData} from '../../const';
 
 const Container = styled.section`
@@ -125,10 +125,15 @@ const PaginationItem = styled.li`
   }
 `;
 
-const renderLegendText = (value) => {
+const LegendText = styled.span`
+  display: inline-block;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  color: #424242;
+  font-size: 11px;
+`;
 
-  return <span style={{color: `#424242`, fontSize: 11}}>{value}</span>;
-};
+const renderLegendText = (value) => <LegendText>{value}</LegendText>;
 
 const TaxSum = () => {
 
@@ -155,8 +160,8 @@ const TaxSum = () => {
           outerRadius={70}
           dataKey="value"
         >
-          {chartData.map((entry) => (
-            <Cell key={`${entry.name}`} fill={`${entry.color}`} />
+          {chartData.map((item) => (
+            <Cell key={`${item.name}`} fill={`${item.color}`} />
           ))}
         </Pie>
         <Legend
@@ -166,7 +171,7 @@ const TaxSum = () => {
           iconType={`circle`}
           iconSize={7}
           formatter={renderLegendText}
-          wrapperStyle={{bottom: `19px`, right: `27px`}}
+          wrapperStyle={{bottom: `13px`, right: `22px`}}
         />
       </PieChart>
       <Controlls>
