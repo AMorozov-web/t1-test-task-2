@@ -7,6 +7,8 @@ const Color = {
   MANTLE: `#939796`,
   MINE_SHAFT: `#262626`,
   WHITE: `#ffffff`,
+  OLD_BRICK: `#892128`,
+  BISMARK: `#457387`,
 };
 
 const chartData = [

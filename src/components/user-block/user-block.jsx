@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const unreadNotifyCount = 3;
 
@@ -17,7 +18,7 @@ const List = styled.ul`
 
 const Item = styled.li`
   padding-top: 2px;
-  
+
   &:not(:last-child) {
     margin-right: 5px;
   }
@@ -28,7 +29,7 @@ const Button = styled.button`
   width: 40px;
   height: 40px;
   padding: 0;
-  background-color: #ffffff;
+  background-color: ${Color.WHITE};
   background-position: center center;
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -43,8 +44,8 @@ const Button = styled.button`
     width: 10px;
     height: 10px;
     font-size: 9px;
-    color: #ffffff;
-    background-color: #8f242f;
+    color: ${Color.WHITE};
+    background-color: ${Color.OLD_BRICK};
     border-radius: 50%;
   }
 `;
