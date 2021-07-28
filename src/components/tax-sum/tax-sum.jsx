@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {PieChart, Pie, Cell, Legend} from 'recharts';
-import {chartData} from '../../const';
+import {chartData, Color} from '../../const';
 
 const Container = styled.section`
   grid-area: sum;
@@ -10,7 +10,7 @@ const Container = styled.section`
   padding-right: 18px;
   padding-top: 15px;
   padding-bottom: 10px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid ${Color.MERCURY};
   border-radius: 2px;
 `;
 
@@ -18,7 +18,7 @@ const SumTitle = styled.p`
   display: block;
   margin: 0;
   margin-bottom: 17px;
-  color: #262626;
+  color: ${Color.TUNDORA};
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.1px;
@@ -30,7 +30,7 @@ const StyledLabel = styled.label`
   margin-bottom: 6px;
   font-size: 11px;
   font-weight: 500;
-  color: #979797;
+  color: ${Color.MANTLE};
 `;
 
 const StyledSelect = styled.select`
@@ -44,13 +44,13 @@ const StyledSelect = styled.select`
   padding-bottom: 10px;
   font-size: 11px;
   font-weight: 500;
-  color: #979797;
+  color: ${Color.TUNDORA};
   background-color: transparent;
   background-image: url('img/period.svg');
   background-repeat: no-repeat;
   background-position: center right 14px;
   background-size: 13px 13px;
-  border: 1px solid #5a5a5a;
+  border: 1px solid ${Color.MERCURY};
   border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -82,13 +82,13 @@ const NavigateButton = styled.button`
 
 const NavigateButtonLeft = styled(NavigateButton)`
   & svg {
-    fill: #d2d2d2;
+    fill: ${Color.MANTLE};
   }
 `;
 
 const NavigateButtonRight = styled(NavigateButton)`
   & svg {
-    fill: #00abe3;
+    fill: ${Color.BISMARK};
   }
 `;
 
@@ -117,7 +117,7 @@ const PaginationItem = styled.li`
   }
 
   &:first-child {
-    background-color: #00abe3;
+    background-color: ${Color.BISMARK};
   }
 
   &:last-child {
@@ -129,7 +129,7 @@ const LegendText = styled.span`
   display: inline-block;
   padding-left: 6px;
   padding-bottom: 6px;
-  color: #424242;
+  color: ${Color.TUNDORA};
   font-size: 11px;
 `;
 
