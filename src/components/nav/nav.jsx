@@ -29,7 +29,7 @@ const Link = styled.a`
 
   &:hover ${StyledText},
   &:focus ${StyledText} {
-    color: ${Color.CURIOS_BLUE};
+    color: ${Color.BISMARK};
   }
 
   & svg {
@@ -41,7 +41,7 @@ const Link = styled.a`
 
   &:hover svg,
   &:focus svg {
-    fill: ${Color.CURIOS_BLUE};
+    fill: ${Color.BISMARK};
   }
 `;
 
@@ -70,7 +70,7 @@ const Summary = styled.summary`
 
   &:hover ${StyledText},
   &:focus ${StyledText} {
-    color: ${Color.CURIOS_BLUE};
+    color: ${Color.BISMARK};
   }
 
   & svg {
@@ -82,7 +82,7 @@ const Summary = styled.summary`
 
   &:hover svg,
   &:focus svg {
-    fill: ${Color.CURIOS_BLUE};
+    fill: ${Color.BISMARK};
   }
 `;
 
@@ -114,11 +114,11 @@ const DropdownLink = styled.details`
     line-height: 140%;
 
     & ${StyledText} {
-      color: ${Color.CURIOS_BLUE};
+      color: ${Color.BISMARK};
     }
 
     & svg {
-      fill: ${Color.CURIOS_BLUE};
+      fill: ${Color.BISMARK};
     }
   }
 `;
