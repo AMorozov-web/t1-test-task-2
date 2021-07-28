@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const StyledNav = styled.nav`
   grid-area: nav;
@@ -11,7 +12,7 @@ const StyledNav = styled.nav`
 const StyledText = styled.p`
   margin: 0;
   margin-top: -3px;
-  color: #5a5a5a;
+  color: ${Color.TUNDORA};
   font-size: 11px;
   font-weight: 500;
   line-height: 140%;
@@ -28,29 +29,29 @@ const Link = styled.a`
 
   &:hover ${StyledText},
   &:focus ${StyledText} {
-    color: #444444;
+    color: ${Color.BISMARK};
   }
 
   & svg {
     width: 18px;
     height: 17px;
     margin-right: 10px;
-    fill: #5a5a5a;
+    fill: ${Color.TUNDORA};
   }
 
   &:hover svg,
   &:focus svg {
-    fill: #444444;
+    fill: ${Color.BISMARK};
   }
 `;
 
 const LinkBack = styled(Link)`
   & ${StyledText} {
-    color: #a6a6a6;
+    color: ${Color.SILVER_CHALICE};
   }
 
   & svg {
-    fill: #a6a6a6;
+    fill: ${Color.SILVER_CHALICE};
   }
 `;
 
@@ -69,19 +70,19 @@ const Summary = styled.summary`
 
   &:hover ${StyledText},
   &:focus ${StyledText} {
-    color: #444444;
+    color: ${Color.BISMARK};
   }
 
   & svg {
     width: 18px;
     height: 17px;
     margin-right: 11px;
-    fill: #5a5a5a;
+    fill: ${Color.TUNDORA};
   }
 
   &:hover svg,
   &:focus svg {
-    fill: #444444;
+    fill: ${Color.BISMARK};
   }
 `;
 
@@ -113,11 +114,11 @@ const DropdownLink = styled.details`
     line-height: 140%;
 
     & ${StyledText} {
-      color: #274252;
+      color: ${Color.BISMARK};
     }
 
     & svg {
-      fill: #274252;
+      fill: ${Color.BISMARK};
     }
   }
 `;
@@ -132,7 +133,7 @@ const DropdownList = styled.ul`
   padding-left: 14px;
   padding-top: 17px;
   padding-bottom: 6px;
-  border-left: 3px solid #e5e5e5;
+  border-left: 3px solid ${Color.MERCURY};
   list-style: none;
 `;
 

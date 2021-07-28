@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const Container = styled.section`
   grid-area: table;
@@ -28,11 +29,11 @@ const Summary = styled.summary`
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: #262626;
+  color: ${Color.TUNDORA};
   font-size: 16px;
   font-weight: 500;
   transition: 0.2s all;
-  background-color: #ffffff;
+  background-color: ${Color.WHITE};
   background-image: url('img/up-tick.svg');
   background-position: center right 20px;
   background-size: 22px 22px;
@@ -44,7 +45,7 @@ const Summary = styled.summary`
 
 const DetailsContent = styled.div`
   width: auto;
-  background-color: #ffffff;
+  background-color: ${Color.WHITE};
   box-shadow: 0px 5px 18px -1px rgba(0, 0, 0, 0.21);
   border-radius: 2px;
 `;
@@ -79,11 +80,11 @@ const TableRow = styled.tr`
 
   &:first-child {
     min-height: 28px;
-    background-color: #f3f3f3;
+    background-color: ${Color.CONCRETE};
   }
 
   &:not(:first-child) {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid ${Color.MERCURY};
   }
 `;
 
@@ -93,7 +94,7 @@ const TableCell = styled.td`
   padding-right: 10px;
   font-size: 9px;
   font-weight: 500;
-  color: #262626;
+  color: ${Color.TUNDORA};
 
   &:first-child {
     width: 146px;
@@ -123,7 +124,7 @@ const TableHead = styled(TableCell)`
   padding-left: 10px;
   font-size: 9px;
   font-weight: 500;
-  color: #a1a1a1;
+  color: ${Color.SILVER_CHALICE};
 
   &:not(:first-child) {
     padding-left: 17px;
@@ -149,14 +150,14 @@ const ShowMoreButton = styled.button`
   width: 100%;
   min-height: 35px;
   padding: 0;
-  color: #274252;
+  color: ${Color.BISMARK};
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: #a1a1a1;
+    color: ${Color.SILVER_CHALICE};
   }
 `;
 

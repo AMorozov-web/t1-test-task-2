@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const Container = styled.section`
   grid-area: declaration;
@@ -20,14 +21,14 @@ const Label = styled.label`
   min-height: 50px;
   font-size: 16px;
   font-weight: 500;
-  color: #262626;
+  color: ${Color.TUNDORA};
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   cursor: pointer;
 
   input:checked + & {
-    background-color: #ffffff;
+    background-color: ${Color.WHITE};
   }
 `;
 
@@ -38,7 +39,7 @@ const Refresh = styled(Label)`
 
 const Timeline = styled(Label)`
   padding-left: 24px;
-  color: #262626;
+  color: ${Color.TUNDORA};
   background-image: url('img/right-tick.svg');
   background-position: center left 7px;
   background-size: 20px 20px;
@@ -57,7 +58,7 @@ const Item = styled.li`
   padding-right: 20px;
   padding-top: 11px;
   padding-bottom: 10px;
-  background-color: #ffffff;
+  background-color: ${Color.WHITE};
 
   &:hover {
     background-color: transparent;
@@ -69,14 +70,14 @@ const ItemDate = styled.p`
   margin-bottom: 8px;
   font-size: 11px;
   font-weight: 500;
-  color: #878988;
+  color: ${Color.MANTLE};
 `;
 
 const ItemTitle = styled.p`
   margin: 0;
   font-size: 11px;
   font-weight: 500;
-  color: #274252;
+  color: ${Color.BISMARK};
 `;
 
 const DeclarationItem = () => {

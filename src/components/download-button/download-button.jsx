@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const Button = styled.button`
   grid-area: downloadButton;
@@ -15,8 +16,8 @@ const Button = styled.button`
   padding-bottom: 8px;
   font-size: 13px;
   font-weight: 500;
-  color: #274252;
-  border: 1px solid #274252;
+  color: ${Color.BISMARK};
+  border: 1px solid ${Color.BISMARK};
   border-radius: 5px;
   cursor: pointer;
 
@@ -24,18 +25,18 @@ const Button = styled.button`
     width: 20px;
     height: 24px;
     margin-right: 9px;
-    fill: #274252;
+    fill: ${Color.BISMARK};
   }
 
   &:hover,
   &:focus {
-    color: #ffffff;
-    background-color: #274252;
+    color: ${Color.WHITE};
+    background-color: ${Color.BISMARK};
   }
 
   &:hover svg,
   &:focus svg {
-    fill: #ffffff;
+    fill: ${Color.WHITE};
   }
 `;
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const StyledLabel = styled.label`
   margin-bottom: 6px;
   font-size: 10px;
   font-weight: 500;
-  color: #5a5a5a;
+  color: ${Color.MANTLE};
 `;
 
 const StyledSelect = styled.select`
@@ -30,13 +31,13 @@ const StyledSelect = styled.select`
   padding-bottom: 12px;
   font-size: 11px;
   font-weight: 500;
-  color: #5a5a5a;
+  color: ${Color.MANTLE};
   background-color: transparent;
   background-image: url('img/down-arrow.svg');
   background-repeat: no-repeat;
   background-position: center right 15px;
   background-size: 13px 13px;
-  border: 1px solid #5a5a5a;
+  border: 1px solid ${Color.MERCURY};
   border-radius: 5px;
   -webkit-appearance: none;
   -moz-appearance: none;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const InputContainer = styled.div`
   position: relative;
@@ -7,7 +8,7 @@ const InputContainer = styled.div`
   flex-grow: 1;
   height: 40px;
   margin-right: 14px;
-  background-color: #ffffff;
+  background-color: ${Color.WHITE};
 
   &::after {
     content: '';
@@ -32,8 +33,8 @@ const Input = styled.input`
   padding-right: 21px;
   font-size: 12px;
   font-weight: 400;
-  color: #a6a6a6;
-  border: 1px solid #ececec;
+  color: ${Color.SILVER_CHALICE};
+  border: 1px solid ${Color.MERCURY};
   border-radius: 4px;
 `;
 
