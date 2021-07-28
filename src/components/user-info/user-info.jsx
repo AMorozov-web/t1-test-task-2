@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Color} from '../../const';
 
 const UserInfoContainer = styled.div`
   display: flex;
@@ -14,14 +15,14 @@ const UserInfoContainer = styled.div`
 const UserName = styled.p`
   margin: 0;
   margin-bottom: 5px;
-  color: #535353;
+  color: ${Color.TUNDORA};
   font-size: 11px;
   font-weight: 500;
 `;
 
 const UserPosition = styled.p`
   margin: 0;
-  color: #c1c1c1;
+  color: ${Color.MANTLE};
   font-size: 11px;
   font-weight: 500;
 `;
