@@ -34,7 +34,7 @@ const Input = styled.input`
   font-size: 12px;
   font-weight: 400;
   color: ${Color.SILVER_CHALICE};
-  border: 1px solid ${Color.GALLERY};
+  border: 1px solid ${Color.MERCURY};
   border-radius: 4px;
 `;
 

@@ -133,7 +133,7 @@ const DropdownList = styled.ul`
   padding-left: 14px;
   padding-top: 17px;
   padding-bottom: 6px;
-  border-left: 3px solid ${Color.GALLERY};
+  border-left: 3px solid ${Color.MERCURY};
   list-style: none;
 `;
 
