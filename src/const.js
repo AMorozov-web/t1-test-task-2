@@ -1,3 +1,13 @@
+const Color = {
+  CURIOS_BLUE: `#1da4c8`,
+  SILVER_CHALICE: `#a6a6a6`,
+  GALLERY: `#ececec`,
+  CONCRETE: `#f3f3f3`,
+  TUNDORA: `#414141`,
+  MANTLE: `#939796`,
+  MINE_SHAFT: `#262626`,
+};
+
 const chartData = [
   {
     name: `НДС`,
@@ -49,4 +59,5 @@ const tableTitles = [
 export {
   chartData,
   tableTitles,
+  Color,
 };
