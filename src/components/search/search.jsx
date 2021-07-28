@@ -6,7 +6,7 @@ const InputContainer = styled.div`
   display: flex;
   flex-grow: 1;
   height: 40px;
-  margin-right: 35px;
+  margin-right: 14px;
   background-color: #ffffff;
 
   &::after {
@@ -37,7 +37,7 @@ const Input = styled.input`
   border-radius: 4px;
 `;
 
-const MainSearch = () => {
+const Search = () => {
 
   return (
     <InputContainer>
@@ -47,4 +47,4 @@ const MainSearch = () => {
   );
 };
 
-export {MainSearch};
+export {Search};

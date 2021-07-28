@@ -1,22 +1,42 @@
 import React from 'react';
 import {Header} from '../header/header';
-import {MainSearch} from '../main-search/main-search';
+import {Search} from '../search/search';
+import {Main} from '../main/main';
 import {T1Logo} from '../t1-logo/t1-logo';
 import {TaxLogo} from '../tax-logo/tax-logo';
 import {UserBlock} from '../user-block/user-block';
 import {UserInfo} from '../user-info/user-info';
+import {Nav} from '../nav/nav';
+import {Title} from '../title/title';
+import {Declaration} from '../declaration/declaration';
+import {DownloadButton} from '../download-button/download-button';
+import {ViewChange} from '../view-change/view-change';
+import {TaxSum} from '../tax-sum/tax-sum';
+import {Table} from '../table/table';
+import {tableTitles} from '../../const';
 
 const App = () => {
 
   return (
-    <Header>
-      <TaxLogo />
-      <T1Logo />
-      <MainSearch />
-      <UserBlock>
-        <UserInfo />
-      </UserBlock>
-    </Header>
+    <>
+      <Header>
+        <TaxLogo />
+        <T1Logo />
+        <Search />
+        <UserBlock>
+          <UserInfo />
+        </UserBlock>
+      </Header>
+      <Main>
+        <Nav />
+        <Title />
+        <DownloadButton />
+        <Declaration />
+        <TaxSum />
+        <ViewChange />
+        <Table titles={tableTitles} />
+      </Main>
+    </>
   );
 };
 

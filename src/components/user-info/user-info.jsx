@@ -7,6 +7,8 @@ const UserInfoContainer = styled.div`
   min-height: 40px;
   justify-content: center;
   align-items: flex-start;
+  padding-left: 23px;
+  padding-right: 30px;
 `;
 
 const UserName = styled.p`

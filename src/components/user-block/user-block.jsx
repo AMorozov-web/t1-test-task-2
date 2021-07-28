@@ -11,10 +11,13 @@ const List = styled.ul`
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-left: 13px;
   list-style: none;
 `;
 
 const Item = styled.li`
+  padding-top: 2px;
+  
   &:not(:last-child) {
     margin-right: 5px;
   }

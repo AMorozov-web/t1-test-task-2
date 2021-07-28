@@ -9,10 +9,12 @@ const StyledHeader = styled.header`
 
 const HeaderContainer = styled.div`
   display: flex;
-  width: 990px;
+  width: 1027px;
   min-height: 64px;
   align-items: center;
   margin: 0 auto;
+  padding-left: 13px;
+  padding-right: 25px;
 `;
 
 const Header = ({children}) => {

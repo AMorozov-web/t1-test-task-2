@@ -6,7 +6,7 @@ const LogoLink = styled.a`
   width: 38px;
   height: 38px;
   margin-left: -4px;
-  margin-right: 25px;
+  margin-right: 27px;
   text-decoration: none;
 `;
 
