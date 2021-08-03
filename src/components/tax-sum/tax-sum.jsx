@@ -162,7 +162,7 @@ const TaxSum = () => {
           dataKey="value"
         >
           {chartData.map((item) => (
-            <Cell key={`${item.name}`} fill={`${item.color}`} />
+            <Cell style={{cursor: `pointer`}} key={`${item.name}`} fill={`${item.color}`} />
           ))}
         </Pie>
         <Legend
