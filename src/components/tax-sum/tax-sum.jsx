@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {PieChart, Pie, Cell, Legend} from 'recharts';
-import {chartData, Color} from '../../const';
+import {Color} from '../../const';
+import {chartData} from '../../mock';
 
 const Container = styled.section`
   grid-area: sum;

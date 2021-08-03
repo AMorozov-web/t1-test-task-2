@@ -13,7 +13,7 @@ import {DownloadButton} from '../download-button/download-button';
 import {ViewChange} from '../view-change/view-change';
 import {TaxSum} from '../tax-sum/tax-sum';
 import {Table} from '../table/table';
-import {tableTitles} from '../../const';
+import {tableTitles} from '../../mock';
 
 const App = () => {
 
